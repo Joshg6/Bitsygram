@@ -59,6 +59,7 @@ class CollectionViewController: UICollectionViewController, UIImagePickerControl
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
            imageArray.append(pickedImage)
+            collectionView.reloadData() // but did we reload the a;sdkfgja;sldgh alksdjgf;lkasdfkasdfing collection view. 
         }
         
          imagePicker.dismiss(animated: true, completion: nil)
